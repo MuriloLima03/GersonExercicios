@@ -10,8 +10,6 @@ export default class ListagemServicosConsumo extends Registro2 {
   }
 
   public cadastrarRegistro(): void {
-    // Implement the registration logic here
-    // ...
   }
 
   public listarMaisConsumidos(): void {

@@ -43,7 +43,7 @@ export default class CadastroCliente extends Cadastro {
     let rg = new RG(rgValor, rgDataEmissao);
 
     let cliente = new Cliente(nome, nomeSocial, cpf, new Genero(generoValor));
-    cliente.setRg(rg); // Set the RG for the cliente
+    cliente.setRg(rg); 
 
     if (generoValor !== undefined) {
       this.clientes.push(cliente);

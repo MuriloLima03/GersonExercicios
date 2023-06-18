@@ -11,7 +11,7 @@ export default class SelecionadorCliente {
 
     public selecionar(cpf: string) {
         let cpfVazio = new CPF("", new Date());
-        let genero = new Genero(GeneroEnum.MASCULINO); // Exemplo de criação de instância de Genero
+        let genero = new Genero(GeneroEnum.MASCULINO); 
         let clienteAlvo = new Cliente("", "", cpfVazio, genero);
 
         this.clientes.forEach((cliente) => {

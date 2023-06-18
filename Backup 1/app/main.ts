@@ -88,19 +88,19 @@ while (execucao) {
       let tipoRegistro = entrada.receberTexto(`Por favor, informe o tipo de registro (produto/servico): `);
       registro.cadastrarRegistro(tipoRegistro);
       break;
-    case 11: // Novo case para cadastrar serviço
+    case 11: 
       let cadastroServico = new CadastroServico(empresa.getServicos);
       cadastroServico.cadastrar();
       break;
-    case 12: // Novo case para listar serviços
+    case 12: 
       let listagemServicos = new ListagemServicos(empresa.getServicos);
       listagemServicos.listar();
       break;
-    case 13: // New case for listing most consumed services
+    case 13: 
     let listagemServicosConsumo = new ListagemServicosConsumo(empresa.getClientes);
     listagemServicosConsumo.listarMaisConsumidos();
     break;
-    case 14: // New case for listing services by gender
+    case 14: 
   let listagemServicosGenero = new ListagemServicosGenero(empresa.getClientes);
   listagemServicosGenero.listarServicosPorGenero();
   break;
